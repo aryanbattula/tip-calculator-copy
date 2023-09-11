@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">Kotlin_Practice</string>
+    <string name="press_me">Press Me</string>
+    <string name="total">Total</string>
+    <string name="person_1">Person 1</string>
+    <string name="person_2">Person 2</string>
+    <string name="person_3">Person 3</string>
+    <string name="tip">Tip</string>
+    <string name="amount">Amount</string>
+    <string name="meal1_input">10.00</string>
+    <string name="meal3_input">32.40</string>
+    <string name="meal2_input">12.00</string>
+    <string name="tip_percent_exp">18</string>
+    <string name="meal1output">output1</string>
+    <string name="meal3output">output3</string>
+    <string name="meal2output">output2</string>
+</resources>

@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/Overall"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="158dp"
+        android:layout_marginEnd="144dp"
+        android:layout_marginBottom="84dp"
+        android:text="press_me"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/person_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="47dp"
+        android:layout_marginTop="69dp"
+        android:text="Person 1"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/person_2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="47dp"
+        android:layout_marginTop="42dp"
+        android:layout_marginBottom="38dp"
+        android:text="Person 2"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        app:layout_constraintBottom_toTopOf="@+id/person_3"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/person_1" />
+
+    <TextView
+        android:id="@+id/person_3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="47dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="312dp"
+        android:text="Person 3"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/person_2" />
+
+    <TextView
+        android:id="@+id/tip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="47dp"
+        android:layout_marginTop="104dp"
+        android:layout_marginEnd="312dp"
+        android:text="Tip"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/person_2" />
+
+    <EditText
+        android:id="@+id/Tip_Percent"
+        android:layout_width="170dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="77dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="64dp"
+        android:autofillHints=""
+        android:hint="18"
+        android:inputType="numberDecimal"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/tip"
+        app:layout_constraintTop_toBottomOf="@+id/Meal_3"
+        tools:ignore="TextContrastCheck" />
+
+    <TextView
+        android:id="@+id/Total_Amount"
+        android:layout_width="170dp"
+        android:layout_height="37dp"
+        android:layout_marginStart="77dp"
+        android:layout_marginTop="80dp"
+        android:layout_marginEnd="64dp"
+        android:text="192.32"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/tip"
+        app:layout_constraintTop_toBottomOf="@+id/Meal_3" />
+
+    <TextView
+        android:id="@+id/total"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="47dp"
+        android:layout_marginTop="168dp"
+        android:layout_marginEnd="312dp"
+        android:text="Total"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/person_2" />
+
+
+    <EditText
+        android:id="@+id/Meal_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="26dp"
+        android:layout_marginTop="69dp"
+        android:layout_marginEnd="43dp"
+        android:layout_marginBottom="17dp"
+        android:autofillHints=""
+        android:ems="10"
+        android:hint="10.00"
+        android:inputType="numberDecimal"
+        android:minHeight="48dp"
+        app:layout_constraintBottom_toTopOf="@+id/Meal_2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/person_1"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="TextContrastCheck,DuplicateSpeakableTextCheck" />
+
+    <EditText
+        android:id="@+id/Meal_3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        android:layout_marginEnd="43dp"
+        android:autofillHints=""
+        android:ems="10"
+        android:hint="10.00"
+        android:minHeight="48dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Meal_2"
+        tools:ignore="TextContrastCheck" />
+
+    <EditText
+        android:id="@+id/Meal_2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="17dp"
+        android:layout_marginEnd="43dp"
+        android:ems="10"
+        android:hint="10.00"
+        android:importantForAutofill="no"
+        android:inputType="numberDecimal"
+        android:minHeight="48dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Meal_1"
+        tools:ignore="TextContrastCheck" />
+
+    <TextView
+        android:id="@+id/meal2output"
+        android:layout_width="102dp"
+        android:layout_height="18dp"
+        android:layout_marginTop="66dp"
+        android:layout_marginBottom="66dp"
+        android:text="Total 2"
+        app:layout_constraintBottom_toTopOf="@+id/button"
+        app:layout_constraintEnd_toStartOf="@+id/meal3output"
+        app:layout_constraintStart_toEndOf="@+id/meal1output"
+        app:layout_constraintTop_toBottomOf="@+id/Total_Amount" />
+
+    <TextView
+        android:id="@+id/meal1output"
+        android:layout_width="90dp"
+        android:layout_height="17dp"
+        android:layout_marginStart="270dp"
+        android:layout_marginTop="74dp"
+        android:layout_marginBottom="271dp"
+        android:text="Total 1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/meal2output"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/total"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <TextView
+        android:id="@+id/meal3output"
+        android:layout_width="110dp"
+        android:layout_height="20dp"
+        android:layout_marginTop="183dp"
+        android:layout_marginEnd="250dp"
+        android:layout_marginBottom="271dp"
+        android:text="Total 3 "
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/meal2output"
+        app:layout_constraintTop_toBottomOf="@+id/Meal_3" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
