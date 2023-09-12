@@ -11,19 +11,24 @@ import com.google.firebase.auth.ktx.auth
 import com.google.firebase.ktx.Firebase
 
 class Login : AppCompatActivity() {
+
     private lateinit var  authorization: FirebaseAuth
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_login)
 
         authorization = Firebase.auth
+
     }
 
     fun login(view: View) {
         val email = findViewById<EditText>(R.id.editTextEmailAddress).text.toString().trim()
         val password = findViewById<EditText>(R.id.editTextPassword).text.toString().trim()
 
+
         authorization.signInWithEmailAndPassword(email, password).addOnCompleteListener { task ->
+
             if(task.isSuccessful) {
                 val intent= Intent(this, MainActivity::class.java)
                 startActivity(intent)
