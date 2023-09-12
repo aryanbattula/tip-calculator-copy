@@ -26,7 +26,7 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        var button = findViewById(R.id.button) as Button
+        var button = findViewById<Button>(R.id.button)
 
         meal_1 = findViewById(R.id.Meal_1)
         meal_2 = findViewById(R.id.Meal_2)
