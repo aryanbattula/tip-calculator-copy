@@ -7,12 +7,20 @@ import android.widget.Button
 import android.widget.EditText
 import android.widget.TextView
 
+import com.google.firebase.database.DatabaseReference
+import com.google.firebase.database.ktx.database
+import com.google.firebase.ktx.Firebase
+import com.google.firebase.database.FirebaseDatabase
+import java.lang.Math.log
+
+
 class MainActivity : AppCompatActivity() {
     private lateinit var meal_1: EditText
     private lateinit var meal_2: EditText
     private lateinit var meal_3: EditText
     private lateinit var tip_percent: EditText
     private lateinit var final_total: TextView
+//    private lateinit var ref: DatabaseReference
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -59,6 +67,13 @@ class MainActivity : AppCompatActivity() {
 
                 final_total.text = "${"%.2f".format(newTotalCost)}"
 
+
+                val database = Firebase.database
+                val myRef = database.reference
+                println("reference")
+                println(myRef)
+                println("end reference")
+                myRef.setValue("abcd")
             }
         })
     }
