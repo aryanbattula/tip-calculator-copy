@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "10851691476",
+    "project_id": "tip-calculator-f0d78",
+    "storage_bucket": "tip-calculator-f0d78.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:10851691476:android:7e7050e4f9a924ad51c441",
+        "android_client_info": {
+          "package_name": "com.example.kotlin_practice"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA3lVmy_zEPLIuUqrXUjyrBWXKlU9PiLpA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
